@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>北念导航页</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <style>
+        .btn-hover {
+            transition: all 0.3s ease;
+        }
+        .btn-hover:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+    </style>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center p-4">
+    <div class="w-full max-w-md bg-white rounded-2xl shadow-xl p-8">
+        <!-- 标题区域 -->
+        <div class="text-center mb-10">
+            <h1 class="text-3xl font-bold text-blue-800 flex items-center justify-center">
+                <i class="fa fa-compass mr-3"></i>北念导航
+            </h1>
+            <p class="text-gray-500 mt-2">快速访问核心服务</p>
+        </div>
+
+        <!-- 导航按钮区域 -->
+        <div class="space-y-4">
+            <!-- 卡网下载 -->
+            <a href="https://your-download-link.com" target="_blank" class="block">
+                <button class="w-full bg-blue-600 text-white font-semibold py-4 px-6 rounded-xl btn-hover flex items-center justify-center">
+                    <i class="fa fa-download text-xl mr-3"></i>进入卡网下载
+                </button>
+            </a>
+
+            <!-- 北念接码平台 -->
+            <a href="https://your-jiema-link.com" target="_blank" class="block">
+                <button class="w-full bg-green-600 text-white font-semibold py-4 px-6 rounded-xl btn-hover flex items-center justify-center">
+                    <i class="fa fa-mobile-phone text-xl mr-3"></i>北念接码平台
+                </button>
+            </a>
+
+            <!-- 联系北念 -->
+            <a href="https://your-contact-link.com" target="_blank" class="block">
+                <button class="w-full bg-purple-600 text-white font-semibold py-4 px-6 rounded-xl btn-hover flex items-center justify-center">
+                    <i class="fa fa-envelope text-xl mr-3"></i>联系北念
+                </button>
+            </a>
+        </div>
+
+        <!-- 页脚 -->
+        <div class="text-center mt-12 text-gray-400 text-sm">
+            <p>© 2025 北念 · 免费部署于GitHub Pages</p>
+        </div>
+    </div>
+
+    <script>
+        // 可选：添加点击反馈效果
+        document.querySelectorAll('button').forEach(btn => {
+            btn.addEventListener('click', function() {
+                this.classList.add('scale-95');
+                setTimeout(() => this.classList.remove('scale-95'), 200);
+            });
+        });
+    </script>
+</body>
+</html>
