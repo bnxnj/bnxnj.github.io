@@ -1,1 +1,1 @@
-# bnxnjdh.com
+# bnxnjdh.io
